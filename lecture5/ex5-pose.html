@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+  <h1>顔検出・姿勢検出</h1>
+  <div class="canvasContainer">
+    <video id="myVideo" width="640" height="480" hidden></video>
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+    <h3>信頼度</h3>
+    <div id="map">
+      <canvas id="heatmap" width="640" height="30"></canvas>
+      <div id="barText">
+        <h3>0.0</h3>
+        <h3>0.5</h3>
+        <h3>1.0</h3>
+      </div>
+    </div>
+    <canvas id="bodyCanvas" width="640" height="640"></canvas>
+  </div>
+  <script src="./ex5-pose.js"></script>
+</body>
+
+</html>

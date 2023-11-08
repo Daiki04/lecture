@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 演習 5-2 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+  <h1>COCO-SSD による物体検出</h1>
+  <div class="canvasContainer">
+    <video id="myVideo" width="640" height="480" hidden></video>
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+    <h3>信頼度</h3>
+    <div id="map">
+      <canvas id="heatmap" width="640" height="30"></canvas>
+      <div id="barText">
+        <h3>0.0</h3>
+        <h3>0.5</h3>
+        <h3>1.0</h3>
+      </div>
+    </div>
+  </div>
+  <script src="./ex5-coco.js"></script>
+</body>
+
+</html>

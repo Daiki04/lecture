@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+.canvasContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvasContainer > h3 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+#bodyCanvas {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#heatmap {
+    margin-bottom: 0;
+}
+
+#barText {
+    margin: 0;
+    height: 30px;
+    width: 640px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+#barText > h3 {
+    margin: 0;
+}
+

@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.drawArea {
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.buttonContainer {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.buttonContainer > button {
+    margin: 10px auto;
+    width: 45%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.buttonContainer > button:hover {
+    background-color: #e0e0e0;
+}
+
+.buttonContainer > button:active {
+    background-color: #d0d0d0;
+}
+
+#myCanvas {
+    border: 2px solid black;
+    margin: 0 auto;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/> -->
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"/>
+    <title>Hello</title>
+</head>
+<body>
+    <h1>手書き文字アプリ</h1>
+    <p>数字を書いてみましょう！</p>
+    <div class="drawArea">
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <div class="buttonContainer">
+            <button id="clearButton" onclick="reset()">クリア</button>
+            <button id="sendButton" onclick="upload();reset()">送信</button>
+        </div>
+    </div>
+    <div id="resultArea">
+    </div>
+
+    <script src="static/main.js"></script>
+</body>
+</html>
